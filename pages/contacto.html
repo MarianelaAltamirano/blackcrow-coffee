@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/591a2f11da.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contacto - Black Crow Coffee</title>
+    <meta
+      name="description"
+      content="Completa este formulario y contáctanos para recibir la mejor atención sobre nuestro café especial de aroma único y orgánico, recién tostado en Rosario."
+    />
+    <meta
+      name="keywords"
+      content="Black Crow Coffee, contacto, formulario, café especial, aroma único, café orgánico, café recién tostado, Rosario, atención al cliente, mensaje"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../scss/layout/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            class="header__logo"
+            src="../assets/img/logo_1.png"
+            alt="Logo Black Crow Coffee"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-1" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-2" href="../pages/nosotros.html"
+                >Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-3" href="../pages/menu.html">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-4" href="../pages/opiniones.html"
+                >Opiniones</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-5" href="../pages/contacto.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="main__contact">
+        <div class="main__contact__content">
+          <div class="main__contact__form">
+            <h1>Comunicate con nosotros</h1>
+            <p>¡No dudes en contactarnos utilizando este formulario!</p>
+            <form action="enviar_formulario.php" method="post">
+              <label for="nombre">Nombre:</label>
+              <input
+                class="input"
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Introduce tu nombre"
+                required
+              /><br /><br />
+
+              <label for="télefono">Teléfono:</label>
+              <input
+                class="input"
+                type="text"
+                id="télefono"
+                name="télefono"
+                placeholder="Introduce tu número"
+                required
+              /><br /><br />
+
+              <label for="email">Email:</label>
+              <input
+                class="input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Introduce tu email"
+                required
+              /><br /><br />
+
+              <label for="mensaje">Mensaje:</label><br />
+              <textarea id="mensaje" name="mensaje" rows="5" required></textarea
+              ><br /><br />
+
+              <input type="submit" value="Enviar" />
+            </form>
+          </div>
+          <div class="main__contact__location">
+            <div class="main__contact__location__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.791780187514!2d-60.649909724286516!3d-32.95650637238672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab0deae07009%3A0x77f91483079b5668!2sAv.%20Pellegrini%201561%2C%20S2000BUC%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1687811061638!5m2!1ses!2sar"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <a target="_blank" href="https://web.whatsapp.com/">
+      <img class="whatsapp" src="../assets/img/wpp.png" alt="WhatsApp" />
+    </a>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-logo">
+              <img
+                class="logo__footer"
+                src="../assets/img/logo_2.png"
+                alt="Logo Black Crow Coffee"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-social">
+              <h2 class="footer-title">Seguínos</h2>
+              <ul class="social-links">
+                <li class="social-link">
+                  <a target="_blank" href="https://www.facebook.com">
+                    <i
+                      class="fa-brands fa-facebook fa-2xl"
+                      style="color: #ffffff"
+                    ></i>
+                  </a>
+                </li>
+                <li class="social-link">
+                  <a target="_blank" href="https://www.instagram.com/">
+                    <i
+                      class="fa-brands fa-instagram fa-2xl"
+                      style="color: #ffffff"
+                    ></i>
+                  </a>
+                </li>
+                <li class="social-link">
+                  <a target="_blank" href="https://twitter.com/">
+                    <i
+                      class="fa-brands fa-twitter fa-2xl"
+                      style="color: #ffffff"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-info">
+              <h2 class="footer-title">Datos de contacto</h2>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  Pelegrini 1334, Santa Fe, Rosario - CD: 2000
+                </li>
+                <li class="footer-item">hola@blackcrowcoffe.com</li>
+                <li class="footer-item">+54 9 3416 71-8135</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

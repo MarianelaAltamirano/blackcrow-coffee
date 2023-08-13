@@ -1,0 +1,48 @@
+.header {
+  background-color: $firstColor;
+
+  &__logo {
+    max-width: 100%;
+  }
+}
+
+.navbar-light {
+  .navbar-toggler {
+    border-width: 0.2rem;
+  }
+  
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: #252422;
+    font-weight: bold;
+    
+    font-size: 1.7rem;
+    
+    &:hover {
+      background-color: #ccc5b9af;
+    }
+  }
+
+  .nav-link {
+    &.nav-link {
+      animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+    
+    @for $item from 1 through 5 {
+      &.nav-#{$item} {
+        animation-delay: $item * 0.2s;
+      }
+    }
+  }
+}
+
+@keyframes slide-fwd-center {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

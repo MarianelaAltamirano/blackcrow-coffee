@@ -1,0 +1,68 @@
+.main__reviews {
+  background-image: url("../../assets/img/opinion_background.jpg");
+  background-size: cover;
+  background-position: center center;
+
+  .card__reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+    padding: 2rem;
+  
+    &__p {
+      color: white;
+      font-weight: 500;
+      padding-top: 2rem;
+      text-align: center;
+    }
+  }
+}
+
+.cards__reviews {
+  display: flex;
+  padding: 1rem;
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-content: space-evenly;
+  
+
+  .card__review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 33%;
+    background-color: $secondColor; 
+    border-radius: 50px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    box-shadow: rgba(235, 94, 40, 0.4) 5px 5px, rgba(235, 94, 40, 0.3) 10px 10px, rgba(235, 94, 40, 0.2) 15px 15px, rgba(235, 94, 40, 0.1) 20px 20px, rgba(235, 94, 40, 0.05) 25px 25px;
+      
+    .card__image1 {
+        max-width: 50%;
+        padding: 1rem;
+      }
+    }
+  }
+
+
+@media (max-width: 1024px) {
+  .cards__reviews {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.2rem;
+    .card__review {
+      width: 90%;
+      margin: 1rem 0;
+        .card__image1 {
+          width: 200px;
+        }
+    }
+  }
+  .card__reviews__p{
+    font-size: 2rem;
+    text-align: center;
+  }
+}

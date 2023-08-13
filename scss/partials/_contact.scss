@@ -1,0 +1,116 @@
+.main__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/img/contact_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .main__contact__content {
+    display: flex;
+    background-color: $secondColor;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border: 2px solid $secondColor;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 3rem;
+    box-shadow: rgba(204, 197, 185, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px,
+      rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px,
+      rgba(0, 0, 0, 0.05) 25px 25px;
+
+    .main__contact__form {
+      h1 {
+        margin-bottom: 10px;
+        color: white;
+        text-align: center;
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+
+      label {
+        display: block;
+        color: white;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+      }
+
+      input[type="submit"] {
+        background-color: $thirdColor;
+        color: $fifthColor;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 1rem;
+      }
+    }
+
+    .main__contact__location {
+      .main__contact__location__map {
+        max-width: 100%;
+
+        iframe {
+          margin-top: 10rem;
+          width: 600px;
+          height: 400px;
+          border-radius: 2rem;
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+
+  .input:focus {
+    color: $fifthColor;
+    background-color: $firstColor;
+    border: 0;
+    outline: 2px solid $fifthColor;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main__contact {
+    padding: 0.5rem 0.5rem;
+
+    .main__contact__content {
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem;
+      padding: 1rem;
+
+      .main__contact__form,
+      .main__contact__location {
+        width: 100%;
+
+        .main__contact__location__map {
+          display: flex;
+          justify-content: center;
+          iframe {
+            margin: 2rem 0.1rem;
+            width: 100%;
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+}

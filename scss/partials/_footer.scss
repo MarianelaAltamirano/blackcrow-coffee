@@ -1,0 +1,79 @@
+.footer {
+  background-color: $firstColor;
+
+  .footer-logo {
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .footer-title {
+    font-size: 1.7rem;
+    color: white;
+    margin-block: 1rem;
+  }
+
+  .footer-social,
+  .footer-info {
+    text-align: center;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  .social-link {
+    margin: 0 0.5rem;
+  }
+
+  .footer-list {
+    list-style: none;
+    text-align: center;
+  }
+
+  .footer-item {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+}
+
+// $redes: (
+//     facebook: rgb(0, 114, 254),
+//     instagram: #cb07a49f,
+//     twitter: #39fff5,
+// );
+
+$redes: (
+    facebook: #403d39,
+    instagram: #403d39,
+    twitter: #403d39,
+);
+
+@each $redsocial, $colordered in $redes {
+    .fa-#{$redsocial} {
+        background-color: $colordered;
+    }
+}
+
+.fa-facebook {
+    @extend %iconitos;
+}
+
+.fa-instagram {
+    @extend %iconitos;
+}
+
+.fa-twitter {
+  @extend %iconitos;
+}
+
+.cajitas .cajita1 {
+    background-color: map-get($redes, whatsapp);
+}

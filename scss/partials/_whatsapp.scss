@@ -1,0 +1,36 @@
+.whatsapp {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 1rem;
+  z-index: 9999;
+}
+
+@media (max-width: 576px) {
+  .whatsapp {
+    position: fixed;
+    z-index: 9999;
+    max-width: 14%;
+    bottom: 1rem;
+    right: 0.5rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .whatsapp {
+    position: fixed;
+    z-index: 9999;
+    max-width: 12%;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+@media (min-width: 993px) {
+  .whatsapp {
+    position: fixed;
+    z-index: 9999;
+    max-width: 10%;
+    bottom: 2.5rem;
+    right: 1rem;
+  }
+}

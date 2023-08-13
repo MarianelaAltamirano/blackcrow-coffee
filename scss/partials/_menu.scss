@@ -1,0 +1,77 @@
+.custom-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("../../assets/img/beans.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+
+  .menu__container {
+    width: 100%;
+    padding: 20px;
+    background-color: $fourthColor;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    .cafe__name {
+      font-size: 40px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      width: 100%;
+    }
+    .bottom-line {
+      width: 100%;
+      border: none;
+      border-top: 2px solid black;
+      margin-bottom: 1rem;
+    }
+
+    .menu__category {
+      flex-basis: calc(50% - 20px);
+      margin-bottom: 30px;
+
+      .category__title {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 2rem;
+        text-decoration: underline;
+        font-weight: 600;
+      }
+
+      .category__icon {
+        display: block;
+        margin: 0 auto 15px;
+        width: 60px;
+        height: 60px;
+      }
+
+      .menu__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .item__name {
+          font-weight: 500;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .menu__category {
+      flex-basis: 100%; 
+    }
+  
+    .menu__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }}}
